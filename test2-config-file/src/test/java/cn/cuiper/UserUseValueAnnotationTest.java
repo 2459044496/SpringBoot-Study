@@ -1,5 +1,7 @@
 package cn.cuiper;
 
+import cn.cuiper.config.PlaceholderProperties;
+import cn.cuiper.config.RandomValuePropertySource;
 import cn.cuiper.config.UserUseConfigurationPropertiesAnnotation;
 import cn.cuiper.config.UserUseValueAnnotation;
 import lombok.extern.slf4j.Slf4j;
@@ -21,10 +23,19 @@ public class UserUseValueAnnotationTest {
     @Autowired
     private ApplicationContext context;
 
+    @Autowired
+    private RandomValuePropertySource randomValuePropertySource;
+
+    @Autowired
+    private PlaceholderProperties placeholderProperties;
+
+
     @Test
     public void test() {
         log.info(valueAnnotation.toString());
         log.info(configurationPropertiesAnnotation.toString());
+        log.info(randomValuePropertySource.toString());
+        log.info(placeholderProperties.toString());
     }
 
     @Test

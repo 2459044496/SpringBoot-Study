@@ -1,23 +1,7 @@
-server:
-  port: 8080
-  tomcat:
-    uri-encoding: UTF-8
-
-user:
-  string: I am string
-  list1:
-    - 123
-    - 456
-    - 789
-  map: {k1: v1, k2: v2}
-  book:
-    name: 'intimacy'
-    pageNum: 2615
-  list2:
-    - 111
-    - 222
-    - 333
-  # 单引号，特殊字符作为普通字符串，输出为 123\t456
-  singleQuote: '123\t456'
-  # 双引号，特殊字符会作为本身想表示的意思输出，输出为 123    456
-  doubleQuote: "123\t456"
+spring:
+  profiles:
+    active: dev
+# 多profile时，指定启用的
+#1,配置文件中 spring.profiles.active
+#2,命令行激活，在Program arguments中添加参数：--Spring.profiles.active=dev
+#3,JVM参数，-Dspring.profiles.active=dev

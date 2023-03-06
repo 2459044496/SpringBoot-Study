@@ -1,0 +1,23 @@
+server:
+  port: 8888
+  tomcat:
+    uri-encoding: UTF-8
+
+user:
+  string: I am string
+  list1:
+    - 123
+    - 456
+    - 789
+  map: {k1: v1, k2: v2}
+  book:
+    name: 'intimacy'
+    pageNum: 2615
+  list2:
+    - 111
+    - 222
+    - 333
+  # 单引号，特殊字符作为普通字符串，输出为 123\t456
+  singleQuote: '123\t456'
+  # 双引号，特殊字符会作为本身想表示的意思输出，输出为 123    456
+  doubleQuote: "123\t456"
