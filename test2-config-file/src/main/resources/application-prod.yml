@@ -3,6 +3,14 @@ server:
   tomcat:
     uri-encoding: UTF-8
 
+logging:
+  config: classpath:logback-spring.xml
+# 指定包的日志级别
+#  level:
+#    org.springframework: debug
+logback:
+  path: /opt/logs
+
 user:
   string: I am string
   list1:
