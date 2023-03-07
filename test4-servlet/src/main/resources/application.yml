@@ -1,0 +1,9 @@
+server:
+  port: 9004
+  servlet:
+    context-path: /test4-servlet
+  tomcat:
+    uri-encoding: UTF-8
+    #修改tomcat默认最大连接数
+    threads:
+      max: 666

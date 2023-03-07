@@ -7,6 +7,7 @@
         <module>test1</module>
         <module>test2-config-file</module>
         <module>test3-web</module>
+        <module>test4-servlet</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
