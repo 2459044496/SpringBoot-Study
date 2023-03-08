@@ -14,7 +14,7 @@ import javax.sql.DataSource;
 @Configuration
 public class DruidConfig {
 
-    // SpringBoot默认导入DataSoure不会加入 initial-size等其他配置，
+    // SpringBoot默认导入DataSource不会加入 initial-size等其他配置，
     // 此处手动加入druid数据源bean，并通过@ConfigurationProperties读取yaml的相关配置
     @ConfigurationProperties(prefix = "spring.datasource")
     @Bean
@@ -34,7 +34,7 @@ public class DruidConfig {
     }
 
     /**
-     * 配置Duird的过滤器webStatFilter
+     * 配置Druid的过滤器webStatFilter
      */
     @Bean
     @ConfigurationProperties(prefix = "druid.stat.web-filter")
