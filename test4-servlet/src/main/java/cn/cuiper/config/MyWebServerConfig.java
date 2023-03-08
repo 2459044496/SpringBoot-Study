@@ -1,3 +1,4 @@
+/*
 package cn.cuiper.config;
 
 import org.apache.catalina.connector.Connector;
@@ -11,11 +12,13 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class MyWebServerConfig implements WebServerFactoryCustomizer<ConfigurableWebServerFactory> {
 
-    /**
+    */
+/**
      * 定制或修改tomcat配置
      * 1，修改yml或properties文件
      * 2，实现接口WebServerFactoryCustomizer<ConfigurableWebServerFactory>，重写customize方法
-     * */
+     * *//*
+
 
     @Override
     public void customize(ConfigurableWebServerFactory factory) {
@@ -33,3 +36,4 @@ public class MyWebServerConfig implements WebServerFactoryCustomizer<Configurabl
         });
     }
 }
+*/
